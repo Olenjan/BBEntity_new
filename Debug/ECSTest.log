@@ -1,0 +1,43 @@
+﻿  ECSTest.cpp
+  class any is only available with C++17 or later.
+c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(111): warning C4018: '>=': signed/unsigned mismatch
+  c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(110): note: while compiling class template member function 'CComponent *CComponentCollector<T>::getComponent(int) const'
+          with
+          [
+              T=CComponent_2
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\type_traits(616): note: see reference to class template instantiation 'CComponentCollector<T>' being compiled
+          with
+          [
+              T=CComponent_2
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\memory(1227): note: see reference to class template instantiation 'std::is_convertible<_Yty *,_Ty *>' being compiled
+          with
+          [
+              _Yty=CComponentCollector<CComponent_2>,
+              _Ty=CBaseComponentCollector
+          ]
+  c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(181): note: see reference to class template instantiation 'std::_SP_pointer_compatible<CComponentCollector<T>,CBaseComponentCollector>' being compiled
+          with
+          [
+              T=CComponent_2
+          ]
+  c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(287): note: see reference to function template instantiation 'std::shared_ptr<CComponentCollector<T>> CComponentCollectorManager::newCollector<T>(void)' being compiled
+          with
+          [
+              T=CComponent_2
+          ]
+  c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(315): note: see reference to function template instantiation 'void CEntity::addComponent<CComponent_2>(void) const' being compiled
+c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(82): warning C4018: '<=': signed/unsigned mismatch
+  c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(80): note: while compiling class template member function 'void CComponentCollector<T>::newComponent(int,CComponent *)'
+          with
+          [
+              T=CComponent_2
+          ]
+c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(70): warning C4018: '<=': signed/unsigned mismatch
+  c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(69): note: while compiling class template member function 'void CComponentCollector<T>::dummyComponent(int)'
+          with
+          [
+              T=CComponent_2
+          ]
+  ECSTest.vcxproj -> C:\Users\jan\source\repos\ECSTest\Debug\ECSTest.exe
