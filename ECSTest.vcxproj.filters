@@ -13,12 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Component">
+      <UniqueIdentifier>{1fdf2f03-1f82-4af6-bb95-f2afeff87f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Collector">
+      <UniqueIdentifier>{4fafb351-fb6b-4c1d-b9d6-da1443bc73a1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseComponent.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentCollector.h">
+      <Filter>Header Files\Collector</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentCollectorVectorAccessor.h">
+      <Filter>Header Files\Collector</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectorManager.h">
+      <Filter>Header Files\Collector</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -152,6 +152,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BaseComponent.h" />
+    <ClInclude Include="CollectorManager.h" />
+    <ClInclude Include="ComponentCollector.h" />
+    <ClInclude Include="ComponentCollectorVectorAccessor.h" />
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Singleton.h" />
   </ItemGroup>

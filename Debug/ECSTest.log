@@ -1,43 +1,52 @@
 ﻿  ECSTest.cpp
-  class any is only available with C++17 or later.
-c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(111): warning C4018: '>=': signed/unsigned mismatch
-  c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(110): note: while compiling class template member function 'CComponent *CComponentCollector<T>::getComponent(int) const'
+c:\users\jan\documents\projects\bbentity_new\collectormanager.h(27): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
           with
           [
-              T=CComponent_2
+              _Ty=double
           ]
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\type_traits(616): note: see reference to class template instantiation 'CComponentCollector<T>' being compiled
+  c:\users\jan\documents\projects\bbentity_new\entity.h(42): note: see reference to function template instantiation 'void CComponentCollectorManager::newComponent<T,double>(int,double)' being compiled
           with
           [
-              T=CComponent_2
+              T=CComponent_1
           ]
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\memory(1227): note: see reference to class template instantiation 'std::is_convertible<_Yty *,_Ty *>' being compiled
+  c:\users\jan\documents\projects\bbentity_new\ecstest.cpp(80): note: see reference to function template instantiation 'void CEntity::addComponent<CComponent_1,double>(double) const' being compiled
+c:\users\jan\documents\projects\bbentity_new\componentcollector.h(72): warning C4018: '<=': signed/unsigned mismatch
+  c:\users\jan\documents\projects\bbentity_new\componentcollector.h(71): note: while compiling class template member function 'bool CComponentCollector<T>::hasComponent(int)'
           with
           [
-              _Yty=CComponentCollector<CComponent_2>,
+              T=CComponent_4
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\type_traits(616): note: see reference to class template instantiation 'CComponentCollector<T>' being compiled
+          with
+          [
+              T=CComponent_4
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(1227): note: see reference to class template instantiation 'std::is_convertible<_Yty *,_Ty *>' being compiled
+          with
+          [
+              _Yty=CComponentCollector<CComponent_4>,
               _Ty=CBaseComponentCollector
           ]
-  c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(181): note: see reference to class template instantiation 'std::_SP_pointer_compatible<CComponentCollector<T>,CBaseComponentCollector>' being compiled
+  c:\users\jan\documents\projects\bbentity_new\collectormanager.h(77): note: see reference to class template instantiation 'std::_SP_pointer_compatible<CComponentCollector<T>,CBaseComponentCollector>' being compiled
           with
           [
-              T=CComponent_2
+              T=CComponent_4
           ]
-  c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(287): note: see reference to function template instantiation 'std::shared_ptr<CComponentCollector<T>> CComponentCollectorManager::newCollector<T>(void)' being compiled
+  c:\users\jan\documents\projects\bbentity_new\entity.h(42): note: see reference to function template instantiation 'std::shared_ptr<CComponentCollector<T>> CComponentCollectorManager::newCollector<T>(void)' being compiled
           with
           [
-              T=CComponent_2
+              T=CComponent_4
           ]
-  c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(315): note: see reference to function template instantiation 'void CEntity::addComponent<CComponent_2>(void) const' being compiled
-c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(82): warning C4018: '<=': signed/unsigned mismatch
-  c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(80): note: while compiling class template member function 'void CComponentCollector<T>::newComponent(int,CComponent *)'
+c:\users\jan\documents\projects\bbentity_new\componentcollector.h(48): warning C4018: '<=': signed/unsigned mismatch
+  c:\users\jan\documents\projects\bbentity_new\componentcollector.h(46): note: while compiling class template member function 'void CComponentCollector<T>::newComponent(int,CBaseComponent &)'
           with
           [
-              T=CComponent_2
+              T=CComponent_4
           ]
-c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(70): warning C4018: '<=': signed/unsigned mismatch
-  c:\users\jan\source\repos\ecstest\ecstest\ecstest.cpp(69): note: while compiling class template member function 'void CComponentCollector<T>::dummyComponent(int)'
+c:\users\jan\documents\projects\bbentity_new\componentcollector.h(36): warning C4018: '<=': signed/unsigned mismatch
+  c:\users\jan\documents\projects\bbentity_new\componentcollector.h(35): note: while compiling class template member function 'void CComponentCollector<T>::dummyComponent(int)'
           with
           [
-              T=CComponent_2
+              T=CComponent_4
           ]
-  ECSTest.vcxproj -> C:\Users\jan\source\repos\ECSTest\Debug\ECSTest.exe
+  ECSTest.vcxproj -> C:\Users\Jan\Documents\Projects\BBEntity_new\Debug\ECSTest.exe
