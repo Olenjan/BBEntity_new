@@ -8,6 +8,7 @@ class CBaseComponentCollector
 {
 private:
 public:
+	const std::type_info* componentType;
 	virtual void dummyComponent(int slotID) = 0;
 	virtual void newComponent(int slotID, CBaseComponent& component) = 0;
 	virtual std::string componentName() const = 0;

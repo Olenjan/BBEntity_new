@@ -158,7 +158,6 @@
     <ClInclude Include="ComponentCollectorVectorAccessor.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Singleton.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ECSTest.cpp" />

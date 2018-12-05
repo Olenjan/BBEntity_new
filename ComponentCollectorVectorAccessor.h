@@ -25,6 +25,10 @@ public:
 	template <typename T>
 	bool isValid(int entityID)
 	{
+		if (m_CurrentAccessedCollector > m_ComponentCollectors.size() - 1)
+		{
+			return false;
+		}
 		auto& ref = m_ComponentCollectors.at(m_CurrentAccessedCollector)->getComponent(entityID);
 		m_CurrentAccessedCollector++;
 
@@ -47,5 +51,10 @@ public:
 
 		auto& castRef = static_cast<T&>(ref);
 		return castRef;
+	}
+
+	int collectorCount()
+	{
+		return m_ComponentCollectors.size();
 	}
 };
